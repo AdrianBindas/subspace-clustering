@@ -1,5 +1,5 @@
 from setuptools import setup, find_packages
-
+print(find_packages())
 setup(
     name="subspace-clustering",
     version="1.0",
@@ -12,6 +12,6 @@ setup(
         'Source': 'https://github.com/ChongYou/subspace-clustering/',
         'Fork': 'https://github.com/AdrianBindas/subspace-clustering',
     },
-    packages=find_packages(),
+    packages=["subspace_clustering"],
     install_requires=["numpy", "scipy", "scikit-learn", "progressbar2", "kymatio"]
 )
